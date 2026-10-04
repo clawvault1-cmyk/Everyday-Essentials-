@@ -8,12 +8,12 @@
 // the sheet says checkout is not connected and nothing is charged.
 window.EE_CHECKOUT = {
   "life-pack": "",
-  "budget-debt-payoff-planner": "https://clawvault.gumroad.com/l/wfttlw",
-  "weekly-meal-planner-grocery-guide": "https://clawvault.gumroad.com/l/wegec",
+  "budget-debt-payoff-planner": "https://shop.everydayessentials.guide/l/wfttlw",
+  "weekly-meal-planner-grocery-guide": "https://shop.everydayessentials.guide/l/wegec",
   "adhd-friendly-daily-planner-habit-tracker": "",
   "in-case-of-emergency-family-organizer": "",
   "gig-worker-tax-deduction-tracker": "",
-  "home-management-binder-cleaning-schedules": "https://clawvault.gumroad.com/l/vxqerx",
+  "home-management-binder-cleaning-schedules": "https://shop.everydayessentials.guide/l/vxqerx",
   "chore-charts-kids-routine-cards": "",
   "caregiver-medication-appointment-log": "",
   "moving-new-home-checklist-pack": "",

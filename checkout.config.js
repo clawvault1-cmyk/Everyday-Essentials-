@@ -10,12 +10,12 @@ window.EE_CHECKOUT = {
   "life-pack": "",
   "budget-debt-payoff-planner": "https://shop.everydayessentials.guide/l/wfttlw",
   "weekly-meal-planner-grocery-guide": "https://shop.everydayessentials.guide/l/wegec",
-  "adhd-friendly-daily-planner-habit-tracker": "",
-  "in-case-of-emergency-family-organizer": "",
-  "gig-worker-tax-deduction-tracker": "",
+  "adhd-friendly-daily-planner-habit-tracker": "https://shop.everydayessentials.guide/l/ehuibo",
+  "in-case-of-emergency-family-organizer": "https://shop.everydayessentials.guide/l/nceqtw",
+  "gig-worker-tax-deduction-tracker": "https://shop.everydayessentials.guide/l/vtwqys",
   "home-management-binder-cleaning-schedules": "https://shop.everydayessentials.guide/l/vxqerx",
-  "chore-charts-kids-routine-cards": "",
-  "caregiver-medication-appointment-log": "",
-  "moving-new-home-checklist-pack": "",
-  "freelancer-starter-kit": ""
+  "chore-charts-kids-routine-cards": "https://shop.everydayessentials.guide/l/tenir",
+  "caregiver-medication-appointment-log": "https://shop.everydayessentials.guide/l/cddui",
+  "moving-new-home-checklist-pack": "https://shop.everydayessentials.guide/l/vwoyff",
+  "freelancer-starter-kit": "https://shop.everydayessentials.guide/l/jldunrp"
 };

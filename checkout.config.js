@@ -7,7 +7,7 @@
 // that product's sheet opens the URL in the same tab. When it is empty,
 // the sheet says checkout is not connected and nothing is charged.
 window.EE_CHECKOUT = {
-  "life-pack": "",
+  "life-pack": "https://shop.everydayessentials.guide/l/vdigvw",
   "budget-debt-payoff-planner": "https://shop.everydayessentials.guide/l/wfttlw",
   "weekly-meal-planner-grocery-guide": "https://shop.everydayessentials.guide/l/wegec",
   "adhd-friendly-daily-planner-habit-tracker": "https://shop.everydayessentials.guide/l/ehuibo",

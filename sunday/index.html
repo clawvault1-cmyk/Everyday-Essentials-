@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Sunday Reset — The Printable Life Pack · Everyday Essentials</title>
+<meta name="theme-color" content="#123c4a">
+<style>
+@font-face{font-family:"Fraunces";font-weight:600;font-display:swap;src:url(fonts/fraunces-560.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-weight:700;font-display:swap;src:url(fonts/fraunces-650.woff2) format("woff2")}
+@font-face{font-family:"Source Sans 3";font-weight:400;font-display:swap;src:url(fonts/source-sans-400.woff2) format("woff2")}
+@font-face{font-family:"Source Sans 3";font-weight:600;font-display:swap;src:url(fonts/source-sans-600.woff2) format("woff2")}
+@font-face{font-family:"Source Sans 3";font-weight:700;font-display:swap;src:url(fonts/source-sans-700.woff2) format("woff2")}
+:root{--teal:#123c4a;--deep:#0b2a33;--cream:#f3eee4;--paper:#faf7f1;--ink:#0f2229;--muted:#5f7176;--accent:#e2876a;
+--serif:"Fraunces",Georgia,serif;--sans:"Source Sans 3",system-ui,sans-serif;--T:12s}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:linear-gradient(180deg,#f6f1e8 0%,#ece4d4 40%,#e6eeea 75%,#f3eee4 100%);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+h1,h2{font-family:var(--serif);font-weight:700;letter-spacing:-.02em;line-height:1.02;color:var(--teal)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:.55em;background:var(--cream);color:var(--teal);font:700 1.05rem/1 var(--sans);padding:19px 30px;border-radius:999px;text-decoration:none;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 14px 30px -12px rgba(11,42,51,.55);border:1px solid rgba(18,60,74,.18);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 20px 36px -14px rgba(11,42,51,.6)}
+.btn svg{width:18px;height:18px}
+.price{font:700 1.9rem/1 var(--serif);color:var(--teal)}
+.price small{display:block;font:600 .74rem/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+/* nav */
+nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0}
+.mark{font:700 1.05rem var(--serif);color:var(--teal);text-decoration:none;display:flex;align-items:center;gap:10px}
+.mark i{width:26px;height:26px;border-radius:8px;background:var(--teal);display:inline-grid;place-items:center;color:var(--cream);font:700 .8rem var(--serif);font-style:normal}
+nav a.small{font:700 .9rem var(--sans);color:var(--teal);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center;padding:28px 0 90px}
+.eyebrow{font:700 .78rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(2.7rem,5.4vw,4.6rem);margin:18px 0 20px}
+.hero h1 span{display:block;color:var(--accent)}
+.hero p.lead{font-size:1.2rem;line-height:1.5;color:var(--muted);max-width:30ch}
+.buy{display:flex;align-items:center;gap:26px;margin-top:34px;flex-wrap:wrap}
+/* frames */
+.frame{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 50px 90px -40px rgba(11,42,51,.55),0 0 0 1px rgba(18,60,74,.08)}
+.chrome{height:34px;background:#f4f2ee;display:flex;align-items:center;gap:7px;padding:0 14px;border-bottom:1px solid #e8e4dc}
+.chrome i{width:10px;height:10px;border-radius:50%;background:#dcd6cb}
+.chrome b{margin:0 auto;font:600 .7rem var(--sans);color:#9aa3a3;letter-spacing:.05em;background:#fff;padding:4px 18px;border-radius:6px}
+.float{animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+/* film */
+.film{position:relative;aspect-ratio:16/11;background:var(--teal);overflow:hidden}
+.film svg.scene{position:absolute;inset:0;width:100%;height:100%}
+.film *{transform-box:fill-box}
+.sky{animation:sky var(--T) linear infinite}
+@keyframes sky{0%,26%{fill:#1b2f3c}36%,62%{fill:#e9b98f}72%,94%{fill:#f6e7cf}100%{fill:#1b2f3c}}
+.wall{animation:wall var(--T) linear infinite}
+@keyframes wall{0%,26%{fill:#123c4a}36%,94%{fill:#1a4b5b}100%{fill:#123c4a}}
+.thing{transform-origin:center;opacity:0;animation:var(--T) cubic-bezier(.5,0,.3,1) infinite}
+@keyframes t1{0%{opacity:0;transform:translate(0,40px) rotate(0)}3%{opacity:1}8%{transform:translate(-30px,-20px) rotate(-18deg)}15%{transform:translate(20px,10px) rotate(14deg)}22%{transform:translate(-10px,-30px) rotate(-10deg)}27%{opacity:1;transform:translate(0,0) rotate(0)}33%,100%{opacity:0;transform:translate(var(--sx),var(--sy)) scale(.2) rotate(0)}}
+@keyframes t2{0%{opacity:0;transform:translate(0,-40px) rotate(0)}4%{opacity:1}10%{transform:translate(26px,18px) rotate(22deg)}17%{transform:translate(-24px,-12px) rotate(-16deg)}24%{transform:translate(12px,20px) rotate(8deg)}27%{opacity:1;transform:translate(0,0) rotate(0)}33%,100%{opacity:0;transform:translate(var(--sx),var(--sy)) scale(.2)}}
+.ping{opacity:0;transform-origin:center;animation:ping var(--T) ease-out infinite}
+@keyframes ping{0%,3%{opacity:0;transform:scale(.4)}6%{opacity:1;transform:scale(1.1)}8%,26%{opacity:1;transform:scale(1)}31%,100%{opacity:0;transform:scale(.4)}}
+.hand{transform-origin:0% 50%;animation:spin var(--T) linear infinite}
+@keyframes spin{0%{transform:rotate(0)}27%{transform:rotate(1440deg)}33%,100%{transform:rotate(1440deg)}}
+.head{transform-origin:50% 100%;animation:head var(--T) ease-in-out infinite}
+@keyframes head{0%,26%{transform:rotate(0)}2%,10%,18%{transform:rotate(-7deg)}6%,14%,22%{transform:rotate(6deg)}36%,60%{transform:rotate(-3deg)}68%,94%{transform:rotate(2deg)}100%{transform:rotate(0)}}
+.calm{opacity:0;animation:calm var(--T) ease infinite}
+@keyframes calm{0%,30%{opacity:0}38%,94%{opacity:1}100%{opacity:0}}
+.steam path{opacity:0;animation:steam 2.4s ease-in-out infinite}
+.steam path:nth-child(2){animation-delay:.8s}.steam path:nth-child(3){animation-delay:1.6s}
+@keyframes steam{0%{opacity:0;transform:translateY(6px)}40%{opacity:.8}100%{opacity:0;transform:translateY(-14px)}}
+.pen{transform-origin:10% 90%;animation:pen var(--T) ease-in-out infinite}
+@keyframes pen{0%,34%{transform:translate(0,0)}38%{transform:translate(6px,2px)}42%{transform:translate(14px,0)}46%{transform:translate(4px,8px)}50%{transform:translate(16px,8px)}54%{transform:translate(6px,16px)}58%,100%{transform:translate(18px,16px)}}
+.ink{stroke-dasharray:60;stroke-dashoffset:60;animation:ink var(--T) linear infinite}
+.ink.b{animation-name:ink2}.ink.c{animation-name:ink3}
+@keyframes ink{0%,34%{stroke-dashoffset:60}42%,94%{stroke-dashoffset:0}100%{stroke-dashoffset:60}}
+@keyframes ink2{0%,42%{stroke-dashoffset:60}50%,94%{stroke-dashoffset:0}100%{stroke-dashoffset:60}}
+@keyframes ink3{0%,50%{stroke-dashoffset:60}58%,94%{stroke-dashoffset:0}100%{stroke-dashoffset:60}}
+/* overlays in film */
+.cap{position:absolute;left:22px;top:20px;font:700 .72rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--cream);background:rgba(11,42,51,.55);backdrop-filter:blur(6px);padding:8px 13px;border-radius:999px}
+.cap span{display:none}
+.film[data-act="1"] .cap .a1,.film[data-act="2"] .cap .a2,.film[data-act="3"] .cap .a3{display:inline}
+.timer{position:absolute;right:22px;top:18px;font:700 1.7rem/1 var(--serif);color:var(--teal);background:var(--cream);padding:10px 16px;border-radius:14px;box-shadow:0 16px 30px -14px rgba(0,0,0,.5);opacity:0;transform:translateY(-8px);transition:.5s}
+.film[data-act="2"] .timer,.film[data-act="3"] .timer{opacity:1;transform:none}
+.timer small{display:block;font:700 .58rem var(--sans);letter-spacing:.16em;color:var(--accent);margin-bottom:4px}
+.weekpanel{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(250,247,241,.96);backdrop-filter:blur(8px);border-radius:16px;padding:14px 14px 16px;box-shadow:0 24px 40px -18px rgba(0,0,0,.55);opacity:0;transform:translateY(30px);transition:.6s cubic-bezier(.2,.8,.2,1)}
+.film[data-act="3"] .weekpanel{opacity:1;transform:none}
+.week{display:flex;gap:6px}
+.week b{flex:1;padding:9px 0 10px;text-align:center;border-radius:10px;background:#fff;border:1px solid rgba(18,60,74,.12);color:var(--teal);font:700 .72rem var(--sans);letter-spacing:.06em;transition:.35s}
+.week b.on{background:var(--teal);color:var(--cream);border-color:var(--teal);transform:translateY(-3px)}
+.week b.done{background:#e6eeea;color:rgba(18,60,74,.55)}
+.chip{margin-top:12px;font:700 1rem var(--sans);color:var(--teal);display:flex;align-items:center;gap:10px}
+.chip i{width:9px;height:9px;border-radius:50%;background:var(--accent)}
+/* chapters */
+.chapter{padding:70px 0}
+.chapter .grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.chapter.flip .grid{grid-template-columns:1.15fr .85fr}
+.chapter.flip .copy{order:2}
+.step{font:700 .78rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.chapter h2{font-size:clamp(2.2rem,4.2vw,3.6rem);margin:14px 0 16px}
+.chapter p{font-size:1.15rem;line-height:1.5;color:var(--muted);max-width:32ch}
+.reveal{opacity:0;transform:translateY(40px) scale(.98);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+/* panel: chaos */
+.panel{position:relative;aspect-ratio:4/3;overflow:hidden}
+.p-chaos{background:radial-gradient(90% 90% at 50% 40%,#1d5566,#0b2a33)}
+.note{position:absolute;background:var(--cream);color:var(--teal);font:700 .95rem var(--sans);padding:12px 16px;border-radius:12px;box-shadow:0 18px 30px -14px rgba(0,0,0,.6);white-space:nowrap;animation:jit 2.6s ease-in-out infinite}
+.note.acc{background:var(--accent);color:#fff}
+@keyframes jit{0%,100%{transform:translate(0,0) rotate(var(--r))}50%{transform:translate(var(--dx),var(--dy)) rotate(calc(var(--r) * -1))}}
+.in .note{animation-play-state:running}
+.p-chaos .center{position:absolute;inset:0;display:grid;place-items:center;font:700 clamp(2.4rem,5vw,4rem)/1 var(--serif);color:rgba(243,238,228,.12)}
+/* panel: sit */
+.p-sit{background:linear-gradient(160deg,#f6e7cf,#ead7b8);display:grid;place-items:center}
+.big{font:700 clamp(4rem,10vw,8rem)/1 var(--serif);color:var(--teal);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.ring{position:absolute;width:min(62%,72vw);max-height:78%;aspect-ratio:1}
+.ring circle{fill:none;stroke-width:6}
+.ring .bg{stroke:rgba(18,60,74,.12)}
+.ring .fg{stroke:var(--accent);stroke-linecap:round;stroke-dasharray:597;stroke-dashoffset:597;transform:rotate(-90deg);transform-origin:center;transition:stroke-dashoffset 3.2s cubic-bezier(.4,0,.2,1)}
+.in .ring .fg{stroke-dashoffset:0}
+.cup{position:absolute;right:9%;bottom:9%;width:22%}
+.sitlabel{position:absolute;left:0;right:0;bottom:5%;text-align:center;font:700 .78rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+/* panel: week */
+.p-week{background:linear-gradient(180deg,#fbf8f2,#efe9dd);padding:7%;display:grid;grid-template-columns:repeat(7,1fr);gap:10px;align-content:center;aspect-ratio:4/3}
+.day{background:#fff;border-radius:14px;padding:16px 8px 18px;text-align:center;box-shadow:0 14px 26px -18px rgba(11,42,51,.5);border:1px solid rgba(18,60,74,.08);opacity:0;transform:rotateX(80deg);transform-origin:50% 0;transition:opacity .5s,transform .7s cubic-bezier(.2,.8,.2,1)}
+.in .day{opacity:1;transform:none}
+.day h4{font:700 .82rem var(--sans);letter-spacing:.1em;color:var(--teal);text-transform:uppercase}
+.day i{display:block;width:10px;height:10px;border-radius:50%;margin:14px auto 0;background:var(--teal)}
+.day.sun{background:var(--teal)}.day.sun h4{color:var(--cream)}.day.sun i{background:var(--accent)}
+.labels{grid-column:1/-1;display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.lab{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:14px;padding:16px 20px;font:600 1.05rem var(--sans);color:var(--ink);box-shadow:0 14px 26px -20px rgba(11,42,51,.5);opacity:0;transform:translateX(-24px);transition:.7s cubic-bezier(.2,.8,.2,1)}
+.lab b{font-weight:700;color:var(--teal);display:flex;align-items:center;gap:8px}
+.lab b:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.in .lab{opacity:1;transform:none}
+/* end */
+.end{padding:70px 0 110px}
+.endframe{background:var(--teal);color:var(--cream);border-radius:28px;padding:64px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;box-shadow:0 50px 90px -40px rgba(11,42,51,.7)}
+.endframe h2{color:var(--cream);font-size:clamp(2.2rem,4vw,3.4rem)}
+.endframe .price{color:var(--cream)}.endframe .price small{color:rgba(243,238,228,.6)}
+.endframe ul{list-style:none;columns:1;font:600 1rem/1.3 var(--sans);color:rgba(243,238,228,.88)}
+.endframe li{padding:9px 0;border-bottom:1px solid rgba(243,238,228,.12);display:flex;gap:12px}
+.endframe li:before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-top:7px}
+.endframe .lbl{font:700 .74rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+footer{text-align:center;font-size:.85rem;color:var(--muted);padding:0 0 40px}
+.pin{display:none}
+@media (max-width:900px){
+ .hero,.chapter .grid,.chapter.flip .grid,.endframe{grid-template-columns:1fr;gap:34px}
+ .chapter.flip .copy{order:0}
+ .hero{padding:6px 0 40px}
+ .wrap{padding:0 18px}
+ .hero h1{font-size:2.65rem}
+ .film{aspect-ratio:4/4.2}
+ .week b{font-size:.6rem;padding:8px 0;letter-spacing:0}.week{gap:4px}
+ .chapter{padding:40px 0}
+ .p-week{gap:5px;padding:5%;aspect-ratio:auto}
+ .day{padding:12px 2px 14px}.day h4{font-size:.62rem;letter-spacing:.04em}
+ .endframe{padding:36px 24px}
+ .note{font-size:.78rem;padding:9px 12px}
+ .pin{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;justify-content:space-between;align-items:center;background:var(--teal);color:var(--cream);border-radius:999px;padding:8px 8px 8px 22px;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(120%);transition:transform .4s}
+ .pin.show{transform:none}
+ .pin span{font:700 1.05rem var(--serif)}
+ .pin .btn{padding:14px 22px;font-size:.95rem}
+ footer{padding-bottom:100px}
+ nav a.small{display:none}
+ .cap{left:12px;top:12px;font-size:.56rem;letter-spacing:.1em;padding:6px 10px;max-width:58%}
+ .timer{right:12px;top:10px;font-size:1.25rem;padding:8px 12px}
+ .hero p.lead{font-size:1.05rem}
+ .buy{gap:18px;margin-top:24px;flex-wrap:nowrap}
+ .hero .btn{padding:16px 22px;font-size:.98rem}
+ .hero h1{margin:12px 0 14px}
+ .hero .price small{font-size:.6rem;letter-spacing:.08em}
+ .weekpanel{left:10px;right:10px;bottom:10px;padding:10px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important}
+ .thing,.ping{opacity:0!important}.calm{opacity:1!important}
+ .sky{fill:#f6e7cf}.ink{stroke-dashoffset:0}
+ .reveal,.day,.lab{opacity:1;transform:none}.ring .fg{stroke-dashoffset:0}
+ .timer,.weekpanel{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="mark" href="/"><i>E</i>Everyday Essentials</a><a class="small" href="https://shop.everydayessentials.guide/l/vdigvw">Get the Life Pack — $29</a></nav>
+
+<header class="hero">
+ <div>
+  <div class="eyebrow">The Printable Life Pack</div>
+  <h1>Fifteen minutes on Sunday. <span>A quieter week.</span></h1>
+  <p class="lead">Bills, dinners and the house — decided once, so they stop living in your head.</p>
+  <div class="buy">
+   <a class="btn" href="https://shop.everydayessentials.guide/l/vdigvw">Get the Life Pack <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+   <div class="price">$29<small>Instant download · print at home</small></div>
+  </div>
+ </div>
+ <div class="frame float">
+  <div class="chrome"><i></i><i></i><i></i><b>sunday-reset</b></div>
+  <div class="film" id="film" data-act="1">
+   <svg class="scene" viewBox="0 0 640 440" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <rect class="wall" width="640" height="440" fill="#123c4a"/>
+    <!-- window -->
+    <rect x="70" y="50" width="170" height="150" rx="10" fill="#0b2a33"/>
+    <rect class="sky" x="80" y="60" width="150" height="130" rx="4" fill="#1b2f3c"/>
+    <path d="M155 60v130M80 125h150" stroke="#0b2a33" stroke-width="6"/>
+    <!-- clock -->
+    <g transform="translate(470 80)"><circle r="34" fill="#f3eee4"/><circle r="34" fill="none" stroke="#0b2a33" stroke-width="4"/>
+     <rect class="hand" x="0" y="-2" width="24" height="4" rx="2" fill="#123c4a"/><rect x="-2" y="-18" width="4" height="18" rx="2" fill="#e2876a"/><circle r="4" fill="#123c4a"/></g>
+    <!-- plant -->
+    <g transform="translate(560 270)"><path d="M0 0c-14-30-4-60 10-70M10 0c0-30 18-50 34-54M6 0c-24-14-40-10-48-2" stroke="#3f7a6a" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M-14 0h44l-6 40h-32z" fill="#e2876a"/></g>
+    <!-- woman -->
+    <g>
+     <path d="M250 440c0-90 30-150 80-150s80 60 80 150z" fill="#e2876a"/>
+     <path d="M300 300l30 26 30-26" stroke="#c96f53" stroke-width="5" fill="none" stroke-linecap="round"/>
+     <path d="M262 380c10-40 30-60 50-50" stroke="#e2876a" stroke-width="26" fill="none" stroke-linecap="round"/><path d="M398 380c-10-40-30-60-50-50" stroke="#e2876a" stroke-width="26" fill="none" stroke-linecap="round"/><rect x="318" y="262" width="24" height="34" rx="10" fill="#8a5a3c"/>
+     <g class="head">
+      <circle cx="330" cy="225" r="46" fill="#9a6544"/>
+      <path d="M282 222c0-40 22-62 50-62s50 22 50 58c-12-20-34-30-56-28-18 2-34 14-44 32z" fill="#1d1513"/>
+      <circle cx="330" cy="162" r="22" fill="#1d1513"/>
+      <circle cx="312" cy="232" r="4" fill="#1d1513"/><circle cx="348" cy="232" r="4" fill="#1d1513"/>
+      <path class="calm" d="M318 252q12 9 24 0" stroke="#1d1513" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+     </g>
+    </g>
+    <!-- table -->
+    <rect x="0" y="360" width="640" height="80" fill="#e9dcc4"/><rect x="0" y="356" width="640" height="8" fill="#d9c8a9"/>
+    <!-- calm props -->
+    <g class="calm">
+     <g transform="translate(200 300)"><rect x="0" y="10" width="54" height="56" rx="10" fill="#f3eee4"/><path d="M54 24c18 0 18 28 0 28" stroke="#f3eee4" stroke-width="7" fill="none"/>
+      <g class="steam" stroke="#f3eee4" stroke-width="3" fill="none" stroke-linecap="round"><path d="M14 0c-6-10 6-14 0-24"/><path d="M28 0c-6-10 6-14 0-24"/><path d="M42 0c-6-10 6-14 0-24"/></g></g>
+     <g transform="translate(330 330) rotate(-6)"><rect width="130" height="86" rx="6" fill="#fff"/>
+      <path class="ink" d="M16 24h70" stroke="#123c4a" stroke-width="4" stroke-linecap="round"/>
+      <path class="ink b" d="M16 44h90" stroke="#123c4a" stroke-width="4" stroke-linecap="round"/>
+      <path class="ink c" d="M16 64h56" stroke="#e2876a" stroke-width="4" stroke-linecap="round"/>
+      <g class="pen"><rect x="84" y="-6" width="8" height="54" rx="3" fill="#0b2a33" transform="rotate(30 88 20)"/></g></g>
+    </g>
+    <!-- chaos things -->
+    <g class="thing" style="animation-name:t1;--sx:180px;--sy:120px"><g transform="translate(110 230) rotate(-12)"><rect width="96" height="62" rx="6" fill="#f3eee4"/><text x="12" y="26" font-family="Source Sans 3" font-weight="700" font-size="15" fill="#123c4a">BILL DUE</text><text x="12" y="48" font-family="Fraunces" font-weight="700" font-size="18" fill="#e2876a">$142.60</text></g></g>
+    <g class="thing" style="animation-name:t2;--sx:-60px;--sy:80px"><g transform="translate(420 150) rotate(10)"><rect width="74" height="96" rx="6" fill="#fff"/><text x="10" y="20" font-family="Source Sans 3" font-weight="700" font-size="11" fill="#123c4a">GROCERIES</text><path d="M10 34h50M10 50h40M10 66h46M10 82h30" stroke="#c9d3d3" stroke-width="5" stroke-linecap="round"/></g></g>
+    <g class="thing" style="animation-name:t2;--sx:-140px;--sy:60px;animation-delay:-.2s"><g transform="translate(470 250) rotate(-8)"><path d="M0 30c0-16 8-30 22-30h16c6 0 8 6 8 14v8c14 2 34 6 40 14 4 6 0 12-8 12H6c-4 0-6-8-6-18z" fill="#f3eee4"/><path d="M0 40h86" stroke="#e2876a" stroke-width="6"/></g></g>
+    <g class="thing" style="animation-name:t1;--sx:120px;--sy:40px;animation-delay:-.3s"><g transform="translate(150 70) rotate(14)"><rect width="56" height="96" rx="12" fill="#0b2a33"/><rect x="5" y="8" width="46" height="78" rx="6" fill="#2a6476"/></g></g>
+    <g class="ping"><g transform="translate(200 54)"><rect width="128" height="40" rx="20" fill="#fff"/><circle cx="20" cy="20" r="8" fill="#e2876a"/><text x="36" y="25" font-family="Source Sans 3" font-weight="700" font-size="13" fill="#123c4a">picture day??</text></g></g>
+    <g class="ping" style="animation-delay:-.25s"><g transform="translate(380 32)"><rect width="140" height="40" rx="20" fill="#fff"/><circle cx="20" cy="20" r="8" fill="#e2876a"/><text x="36" y="25" font-family="Source Sans 3" font-weight="700" font-size="13" fill="#123c4a">what's for dinner</text></g></g>
+   </svg>
+   <div class="cap"><span class="a1">Sunday · 9:40 am · everything at once</span><span class="a2">Coffee. A pen. Fifteen minutes.</span><span class="a3">And then the week just runs.</span></div>
+   <div class="timer"><small>RESET</small><span id="tm">00:00</span></div>
+   <div class="weekpanel"><div class="week" id="week"><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><b>Fri</b><b>Sat</b><b>Sun</b></div><div class="chip" id="chip"><i></i>Bills: handled</div></div>
+  </div>
+ </div>
+</header>
+
+<section class="chapter">
+ <div class="grid">
+  <div class="copy"><div class="step">01 · Before</div><h2>It's all in your head.</h2><p>Every due date, every dinner, every "did anyone…" — on loop.</p></div>
+  <div class="frame reveal"><div class="chrome"><i></i><i></i><i></i><b>your brain, sunday morning</b></div>
+   <div class="panel p-chaos">
+    <div class="note acc" style="left:8%;top:12%;--r:-6deg;--dx:6px;--dy:-8px">Electric bill — due when?</div>
+    <div class="note" style="left:52%;top:9%;--r:4deg;--dx:-8px;--dy:6px;animation-delay:-.6s">Chicken thawed??</div>
+    <div class="note" style="left:14%;top:40%;--r:3deg;--dx:10px;--dy:4px;animation-delay:-1.2s">Picture day forms</div>
+    <div class="note" style="left:56%;top:36%;--r:-5deg;--dx:-6px;--dy:-6px;animation-delay:-.3s">Dentist — reschedule</div>
+    <div class="note" style="left:6%;top:68%;--r:-3deg;--dx:8px;--dy:-6px;animation-delay:-1.8s">Who's doing pickup Thu?</div>
+    <div class="note acc" style="left:54%;top:66%;--r:6deg;--dx:-10px;--dy:6px;animation-delay:-.9s">Bathroom. Again.</div>
+   </div></div>
+ </div>
+</section>
+
+<section class="chapter flip">
+ <div class="grid">
+  <div class="copy"><div class="step">02 · Sunday</div><h2>Sit down once.</h2><p>Coffee, a pen, the pack. Decide the week in a single sitting.</p></div>
+  <div class="frame reveal"><div class="chrome"><i></i><i></i><i></i><b>sunday · fifteen minutes</b></div>
+   <div class="panel p-sit">
+    <svg class="ring" viewBox="0 0 200 200"><circle class="bg" cx="100" cy="100" r="95"/><circle class="fg" cx="100" cy="100" r="95"/></svg>
+    <div class="big" id="big">00:00</div>
+    <svg class="cup" viewBox="0 0 90 90"><g class="steam" stroke="#123c4a" stroke-width="3" fill="none" stroke-linecap="round" opacity=".5"><path d="M24 22c-6-10 6-14 0-24"/><path d="M38 22c-6-10 6-14 0-24"/><path d="M52 22c-6-10 6-14 0-24"/></g><rect x="10" y="30" width="56" height="54" rx="12" fill="#123c4a"/><path d="M66 42c18 0 18 28 0 28" stroke="#123c4a" stroke-width="7" fill="none"/></svg>
+    <div class="sitlabel">Then close the folder</div>
+   </div></div>
+ </div>
+</section>
+
+<section class="chapter">
+ <div class="grid">
+  <div class="copy"><div class="step">03 · The week</div><h2>Then the week just runs.</h2><p>You already decided. Monday through Sunday, nothing to remember.</p></div>
+  <div class="frame reveal"><div class="chrome"><i></i><i></i><i></i><b>this week</b></div>
+   <div class="p-week">
+    <div class="day"><h4>Mon</h4><i></i></div><div class="day" style="transition-delay:.12s"><h4>Tue</h4><i></i></div><div class="day" style="transition-delay:.24s"><h4>Wed</h4><i></i></div><div class="day" style="transition-delay:.36s"><h4>Thu</h4><i></i></div><div class="day" style="transition-delay:.48s"><h4>Fri</h4><i></i></div><div class="day" style="transition-delay:.6s"><h4>Sat</h4><i></i></div><div class="day sun" style="transition-delay:.72s"><h4>Sun</h4><i></i></div>
+    <div class="labels">
+     <div class="lab" style="transition-delay:1s">Bills <b>handled</b></div>
+     <div class="lab" style="transition-delay:1.2s">Dinner <b>decided</b></div>
+     <div class="lab" style="transition-delay:1.4s">House <b>on schedule</b></div>
+    </div>
+   </div></div>
+ </div>
+</section>
+
+<section class="end" id="buy">
+ <div class="endframe reveal">
+  <div>
+   <h2>Your Sunday reset, ready to print.</h2>
+   <div class="buy"><a class="btn" href="https://shop.everydayessentials.guide/l/vdigvw">Get the Life Pack <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><div class="price">$29<small>Instant download · 10 planners</small></div></div>
+  </div>
+  <div><div class="lbl">Inside the pack</div><ul>
+   <li>Budget &amp; Debt Payoff Planner</li><li>Weekly Meal Planner &amp; Grocery Guide</li><li>Home Management Binder</li><li>Chore Charts &amp; Routine Cards</li><li>ADHD-Friendly Daily Planner</li><li>In-Case-of-Emergency Organizer</li><li>Caregiver Medication Log</li><li>Gig-Worker Tax Tracker</li><li>Moving &amp; New Home Pack</li><li>Freelancer Starter Kit</li></ul></div>
+ </div>
+</section>
+<footer>© Everyday Essentials · everydayessentials.guide</footer>
+</div>
+<div class="pin" id="pin"><span>Life Pack · $29</span><a class="btn" href="https://shop.everydayessentials.guide/l/vdigvw">Get it</a></div>
+<script>
+(()=>{const T=12000,film=document.getElementById('film'),tm=document.getElementById('tm'),wk=[...document.querySelectorAll('#week b')],chip=document.getElementById('chip');
+const labels=['Bills: handled','Dinner: decided','House: on schedule','Bills: handled','Dinner: decided','House: on schedule','Sunday: reset again'];
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;const f=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(Math.floor(s%60)).padStart(2,'0');
+if(rm){film.dataset.act=3;tm.textContent='15:00';wk.forEach(b=>b.classList.add('done'));chip.innerHTML='<i></i>Bills: handled · Dinner: decided';}
+else{const anim=()=>{const a=document.getAnimations().find(x=>x.animationName==='sky');return a?a.currentTime%T:performance.now()%T};
+let last=-1;(function loop(){const t=anim()/T;const act=t<.3?1:t<.64?2:t<.95?3:1;film.dataset.act=act;
+ if(act===2){tm.textContent=f(Math.min(900,(t-.3)/.3*900))}else if(act===1)tm.textContent='00:00';else tm.textContent='15:00';
+ if(act===3){const d=Math.min(6,Math.floor((t-.66)/.28*7));if(d!==last){last=d;wk.forEach((b,i)=>{b.classList.toggle('on',i===d);b.classList.toggle('done',i<d)});chip.innerHTML='<i></i>'+labels[Math.max(0,d)]}}else{last=-1;wk.forEach(b=>b.className='')}
+ requestAnimationFrame(loop)})()}
+const big=document.getElementById('big');let ran=false;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');if(e.target.contains(big)&&!ran){ran=true;if(rm){big.textContent='15:00';return}const s=performance.now();(function c(){const p=Math.min(1,(performance.now()-s)/3200);const ez=1-Math.pow(1-p,3);big.textContent=f(ez*900);if(p<1)requestAnimationFrame(c)})()}}}),{threshold:.3});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const pin=document.getElementById('pin');addEventListener('scroll',()=>pin.classList.toggle('show',scrollY>500&&innerHeight+scrollY<document.body.scrollHeight-300),{passive:true});
+})();
+</script>
+</body>
+</html>

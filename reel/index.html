@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>The Life Pack — Fifteen minutes on Sunday. A quieter week.</title>
+<meta name="description" content="Ten printable planners for the bills, the meals and the house. $29, instant download.">
+<style>
+@font-face{font-family:"Inter";src:url(fonts/inter-var.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--red:#E5301C;--ink:#0B0B0B;--paper:#fff;--mute:#6b6b6b;--line:#e6e6e6;
+--sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased;
+background:radial-gradient(120% 70% at 30% 0%,#fafafa 0%,#e4e4e4 45%,#cfcfcf 100%) fixed;
+font-feature-settings:"cv11","ss01";letter-spacing:-.01em}
+a{color:inherit}
+.stage{padding:72px 24px 120px;display:flex;flex-direction:column;gap:120px;align-items:center}
+/* floating browser frame */
+.frame{width:min(1200px,100%);background:var(--paper);border-radius:22px;overflow:hidden;position:relative;
+box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 40px 80px -30px rgba(0,0,0,.35),0 12px 24px -12px rgba(0,0,0,.18);
+opacity:0;transform:perspective(1400px) translateY(90px) rotateX(14deg) scale(.94);
+transition:opacity .9s var(--ease),transform 1.2s var(--ease)}
+.frame.in{opacity:1;transform:none}
+.bar{height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font-size:12px;color:#8a8a8a;border-bottom:1px solid #f0f0f0}
+.bar .dots{display:flex;gap:6px}.bar .dots i{width:9px;height:9px;border-radius:50%;background:#e2e2e2}
+.bar .url{font-weight:500;letter-spacing:0}
+.bar .sq{width:14px;height:14px;border-radius:4px;background:var(--ink)}
+.label{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);display:flex;gap:10px;align-items:center}
+.label b{color:var(--red);font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--red);color:#fff;text-decoration:none;font-weight:600;font-size:16px;
+padding:16px 26px;border-radius:999px;transition:transform .3s var(--ease),background .3s}
+.btn:hover{transform:translateY(-2px);background:#c8240f}
+.btn svg{width:18px;height:18px}
+.price{font-weight:800;font-size:44px;letter-spacing:-.05em;line-height:1}
+.price small{display:block;font-size:12px;font-weight:500;letter-spacing:0;color:var(--mute);margin-top:6px}
+
+/* HERO ARCH */
+.hero .arch{position:relative;height:min(600px,64vw);display:flex;align-items:center;padding:0 0;gap:4px}
+.arch .side{flex:1;display:flex;align-items:center;gap:4px;height:100%}
+.arch .side.r{flex-direction:row-reverse}
+.p{position:relative;overflow:hidden;border-radius:6px;transform:scaleY(0);transform-origin:center;
+transition:transform 1s var(--ease);flex-shrink:0}
+.hero.in .p{transform:scaleY(1)}
+.p.red{background:var(--red)}.p.blk{background:var(--ink)}.p.wht{background:#fff;box-shadow:inset 0 0 0 1.5px var(--ink)}
+.p .c{position:absolute;left:50%;top:50%;width:140%;aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%)}
+.p .half{position:absolute;inset:50% 0 0 0}
+.p .st{position:absolute;inset:0;background:repeating-linear-gradient(90deg,currentColor 0 2px,transparent 2px 7px);animation:slide 6s linear infinite}
+.p .hst{position:absolute;inset:0;background:repeating-linear-gradient(0deg,currentColor 0 3px,transparent 3px 12px);animation:rise 5s linear infinite}
+@keyframes slide{to{background-position:70px 0}}@keyframes rise{to{background-position:0 120px}}
+.arch .mid{width:38%;flex-shrink:0;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:0 10px;
+opacity:0;transform:translateY(20px);transition:all 1s .7s var(--ease)}
+.hero.in .mid{opacity:1;transform:none}
+h1{font-size:clamp(34px,4.6vw,64px);line-height:.95;letter-spacing:-.055em;font-weight:800}
+h1 em{font-style:normal;color:var(--red)}
+.hero .sub{font-size:15px;line-height:1.45;color:#444;max-width:34ch}
+.hero .buyrow{display:flex;align-items:center;gap:18px}
+.hero .buyrow .price{font-size:34px}
+.pill{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:#fff;border-radius:999px;
+display:flex;align-items:center;gap:22px;padding:7px 7px 7px 20px;font-size:12px;font-weight:500;white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.pill span{opacity:.7}.pill a{background:#fff;color:var(--ink);text-decoration:none;padding:8px 14px;border-radius:999px;font-weight:600}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--red);opacity:1}
+.hero .foot{height:88px}
+
+/* SECTION LAYOUT */
+.sec{display:grid;grid-template-columns:1fr 1.25fr;min-height:620px}
+.sec .copy{padding:64px 56px;display:flex;flex-direction:column;justify-content:space-between;gap:40px}
+h2{font-size:clamp(36px,4.4vw,62px);line-height:.95;letter-spacing:-.055em;font-weight:800}
+h2 em{font-style:normal;color:var(--red)}
+.copy p{font-size:16px;line-height:1.5;color:#444;max-width:36ch}
+.num{font-size:13px;font-weight:600;color:var(--mute);font-variant-numeric:tabular-nums}
+
+/* SPIRAL */
+.spiral{position:relative;overflow:hidden;background:#fff;border-left:1px solid #f0f0f0}
+.tile{position:absolute;border-radius:8px;transform:translate(-50%,-50%) rotate(var(--rot)) scale(0);transition:transform .8s var(--ease)}
+.in .tile{transform:translate(-50%,-50%) rotate(var(--rot)) scale(1)}
+.ordered .tile{transform:translate(-50%,-50%) rotate(calc(var(--rot) + 30deg)) scale(1)}
+.tile.red{background:var(--red)}.tile.blk{background:var(--ink)}.tile.wht{background:#fff;box-shadow:inset 0 0 0 1.5px var(--ink)}
+.tile.st{background:repeating-linear-gradient(45deg,var(--ink) 0 2px,#fff 2px 8px)}
+.tile.ring{background:radial-gradient(circle,#fff 0 34%,var(--ink) 35% 46%,#fff 47%);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.core{position:absolute;left:50%;top:50%;border-radius:50%;background:var(--ink);transform:translate(-50%,-50%);color:#fff;transition:all 1s var(--ease)}
+.ordered .core{background:#fff;box-shadow:0 0 0 1.5px var(--ink),0 30px 60px -20px rgba(0,0,0,.3)}
+.chip{position:absolute;left:50%;top:50%;font-size:13px;font-weight:600;padding:8px 12px;border-radius:999px;background:#fff;color:var(--ink);white-space:nowrap;
+transform:translate(-50%,-50%) translate(var(--x),var(--y)) rotate(var(--r));transition:transform 1.1s var(--ease),background .6s,color .6s;
+animation:jit 1.6s ease-in-out infinite alternate}
+.chip.hot{background:var(--red);color:#fff}
+@keyframes jit{to{margin-left:4px;margin-top:-3px}}
+.ordered .chip{animation:none;transform:translate(-50%,-50%) translate(0,var(--oy)) rotate(0);background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink);width:68%;text-align:left}
+.ordered .chip::after{content:"✓";float:right;color:var(--red);margin-left:10px}
+.coretag{position:absolute;left:50%;bottom:16%;transform:translateX(-50%);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#bbb;transition:opacity .5s}
+.ordered .coretag{opacity:0}
+
+/* BENTO */
+.bento{padding:64px 56px 72px;background:linear-gradient(180deg,#f6f6f6,#ededed)}
+.bento .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:44px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:16px}
+.card{border-radius:18px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;
+transform:translate(var(--dx),var(--dy)) rotate(var(--tr)) scale(.9);opacity:0;transition:transform 1.1s var(--ease),opacity .8s,box-shadow .4s}
+.in .card{transform:rotate(var(--rest));opacity:1}
+.in .card:hover{transform:rotate(0) translateY(-8px) scale(1.03);box-shadow:0 24px 40px -18px rgba(0,0,0,.35)}
+.card .d{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.card .t{font-size:22px;font-weight:700;letter-spacing:-.035em;line-height:1.05}
+.card .t small{display:block;font-size:13px;font-weight:500;letter-spacing:0;opacity:.6;margin-top:6px}
+.c-blue{background:#B9C9F7}.c-green{background:#BFE3C6}.c-peach{background:#F9C9A8}.c-pink{background:#F6B8C4}.c-lav{background:#D9CCF5}.c-yel{background:#F5E6A6}.c-sky{background:#BFE2F0}
+.card.big{grid-column:span 2;grid-row:span 2}
+.card.big .t{font-size:44px;letter-spacing:-.05em}
+.card.wide{grid-column:span 2}
+.card .play{width:44px;height:44px;border-radius:50%;background:#fff;display:grid;place-items:center}
+
+/* EDITORIAL SPLIT */
+.split{display:grid;grid-template-columns:1fr 1fr;position:relative;height:620px;overflow:hidden}
+.split>div{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.split .l{background:var(--ink);color:#fff;padding:0 56px}
+.split .r{background:var(--red);color:#fff;align-items:center}
+.split::before,.split::after{content:"";position:absolute;left:-10%;width:120%;height:130px;background:#fff;border-radius:50%;z-index:2}
+.split::before{top:-80px}.split::after{bottom:-80px}
+.split h2{color:#fff;max-width:11ch}
+.split .l p{color:#cfcfcf;font-size:16px;line-height:1.5;max-width:32ch;margin-top:24px}
+.giant{font-size:min(15vw,220px);font-weight:900;letter-spacing:-.08em;line-height:.8;font-variant-numeric:tabular-nums;color:#fff;
+transform:translateY(60px);opacity:0;transition:all 1.2s .2s var(--ease)}
+.in .giant{transform:none;opacity:1}
+.giant b{color:var(--ink);font-weight:900}
+.ringclock{position:absolute;right:28px;top:110px;width:64px;height:64px;border-radius:50%;background:conic-gradient(#fff 0 25%,rgba(0,0,0,.25) 25%)}
+.r .cap{position:absolute;bottom:110px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+
+/* CLOSE */
+.close{padding:80px 56px;display:grid;grid-template-columns:1.1fr 1fr;gap:56px}
+.close h2{font-size:clamp(40px,5.6vw,84px)}
+.close .buy{display:flex;align-items:center;gap:22px;margin-top:40px;flex-wrap:wrap}
+.list{list-style:none;border-top:1.5px solid var(--ink);counter-reset:n}
+.list li{counter-increment:n;display:flex;gap:18px;padding:13px 0;border-bottom:1px solid var(--line);font-size:16px;font-weight:500;
+opacity:0;transform:translateX(24px);transition:all .7s var(--ease)}
+.in .list li{opacity:1;transform:none}
+.list li::before{content:counter(n,decimal-leading-zero);color:var(--red);font-weight:700;font-variant-numeric:tabular-nums;width:24px}
+footer{font-size:12px;color:#777;text-align:center;padding-bottom:40px}
+.mbar{display:none}
+
+@media (max-width:760px){
+ .stage{padding:16px 10px 110px;gap:44px}
+ .frame{border-radius:16px}
+ .bar{height:34px;padding:0 12px}
+ .hero .arch{height:auto;flex-direction:column;padding:0}
+ .arch .side{width:100%;height:170px;flex:none;align-items:flex-end;padding:10px 8px 0}
+ .arch .side.r{flex-direction:row;align-items:flex-start;padding:0 8px 10px}
+ .arch .mid{width:100%;padding:26px 18px;gap:16px}
+ .hero .sub{font-size:14px}
+ .pill{display:none}.hero .foot{height:0}
+ .sec{grid-template-columns:1fr;min-height:0}
+ .sec .copy{padding:34px 22px;gap:18px}
+ .spiral{height:390px;border-left:0;border-top:1px solid #f0f0f0}
+ .chip{font-size:11px;padding:6px 9px}
+ .bento{padding:34px 16px 40px}
+ .bento .head{flex-direction:column;align-items:start;margin-bottom:26px;gap:12px}
+ .grid{grid-template-columns:1fr 1fr;grid-auto-rows:118px;gap:10px}
+ .card{padding:14px;border-radius:14px}.card .t{font-size:17px}.card.big .t{font-size:30px}
+ .split{grid-template-columns:1fr;height:auto}
+ .split .l{padding:90px 22px 40px}.split .r{height:340px}
+ .ringclock{top:30px;width:44px;height:44px}.r .cap{bottom:80px}
+ .close{grid-template-columns:1fr;padding:40px 22px;gap:30px}
+ .mbar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:50;background:var(--ink);color:#fff;border-radius:999px;
+  padding:8px 8px 8px 22px;align-items:center;justify-content:space-between;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+ .mbar b{font-size:20px;letter-spacing:-.04em}.mbar small{font-size:11px;opacity:.65;margin-left:8px}
+ .mbar .btn{padding:12px 18px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .frame,.p,.tile,.card,.giant,.list li,.arch .mid{opacity:1!important}
+ .frame{transform:none}.p{transform:scaleY(1)}.tile{transform:translate(-50%,-50%) rotate(var(--rot)) scale(1)}
+ .card{transform:rotate(var(--rest))}.giant,.list li,.arch .mid{transform:none}
+}
+</style>
+</head>
+<body>
+<main class="stage">
+
+<section class="frame hero" aria-label="The Life Pack">
+ <div class="bar"><div class="dots"><i></i><i></i><i></i></div><span class="url">everydayessentials.guide</span><span class="sq"></span></div>
+ <div class="arch">
+  <div class="side l" data-side="l"></div>
+  <div class="mid">
+   <div class="label"><b>●</b> The Life Pack</div>
+   <h1>Fifteen minutes on Sunday. <em>A quieter week.</em></h1>
+   <p class="sub">The bills, the dinners, picture day, the laundry. Get it out of your head and onto paper, once a week.</p>
+   <div class="buyrow"><a class="btn" href="https://shop.everydayessentials.guide/l/vdigvw">Get the Life Pack <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><div class="price">$29</div></div>
+  </div>
+  <div class="side r" data-side="r"></div>
+ </div>
+ <div class="foot"></div>
+ <nav class="pill" aria-label="Sections"><span class="dot"></span><span>The chaos</span><span>Her week</span><span>15:00</span><span>10 planners</span><a href="https://shop.everydayessentials.guide/l/vdigvw">$29 — Get it</a></nav>
+</section>
+
+<section class="frame" aria-label="The chaos">
+ <div class="bar"><div class="dots"><i></i><i></i><i></i></div><span class="url">01 — The chaos</span><span class="sq"></span></div>
+ <div class="sec">
+  <div class="copy">
+   <span class="num">01 / 04</span>
+   <h2>It all lives in <em>her</em> head.</h2>
+   <p>Bills, picture day, what's for dinner, the laundry that never ends. Every week it spins. On Sunday it goes onto paper, and it stops spinning.</p>
+  </div>
+  <div class="spiral" id="spiral">
+   <div class="core" id="core"><span class="coretag">Her head, Saturday night</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="frame" aria-label="Her week">
+ <div class="bar"><div class="dots"><i></i><i></i><i></i></div><span class="url">02 — Her week</span><span class="sq"></span></div>
+ <div class="bento">
+  <div class="head"><h2>Then the week <em>just runs.</em></h2><span class="num">02 / 04</span></div>
+  <div class="grid">
+   <div class="card big c-blue" style="--rest:-1.5deg;--tr:-9deg;--dx:-40px;--dy:30px"><span class="d">This week</span><div class="t">Decided on Sunday. Done by Sunday.</div></div>
+   <div class="card c-peach" style="--rest:2deg;--tr:12deg;--dx:40px;--dy:-20px;transition-delay:.08s"><span class="d">Mon</span><div class="t">Bills: handled<small>Paid, logged, off her mind</small></div></div>
+   <div class="card c-green" style="--rest:-2deg;--tr:-10deg;--dx:60px;--dy:20px;transition-delay:.16s"><span class="d">Tue</span><div class="t">Dinner: decided<small>Grocery list already made</small></div></div>
+   <div class="card c-pink" style="--rest:1.5deg;--tr:8deg;--dx:-30px;--dy:40px;transition-delay:.24s"><span class="d">Wed</span><div class="t">House: on schedule<small>Bathrooms, today</small></div></div>
+   <div class="card c-lav" style="--rest:-1deg;--tr:-12deg;--dx:50px;--dy:40px;transition-delay:.32s"><span class="d">Thu</span><div class="t">Picture day: ready<small>Outfit out the night before</small></div></div>
+   <div class="card wide c-yel" style="--rest:1deg;--tr:6deg;--dx:-50px;--dy:30px;transition-delay:.4s"><span class="d">Fri</span><div class="t">Laundry: on its day<small>Not on every day</small></div></div>
+   <div class="card c-sky" style="--rest:-2deg;--tr:-8deg;--dx:30px;--dy:50px;transition-delay:.48s"><span class="d">Sat</span><div class="t">Nothing due<small>Really</small></div></div>
+   <div class="card c-peach" style="--rest:2deg;--tr:10deg;--dx:-20px;--dy:50px;transition-delay:.56s"><span class="d">Sun</span><div class="t">15 minutes<small>And it starts again</small></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="frame" aria-label="Fifteen minutes">
+ <div class="bar"><div class="dots"><i></i><i></i><i></i></div><span class="url">03 — Sunday</span><span class="sq"></span></div>
+ <div class="split">
+  <div class="l"><span class="num" style="color:#888;margin-bottom:22px">03 / 04</span><h2>One sit-down. Coffee, a pen, done.</h2><p>Sunday, at the kitchen table. Money, meals, the house, the kids' week. Fifteen minutes and it's out of her head.</p></div>
+  <div class="r"><span class="ringclock" aria-hidden="true"></span><div class="giant">15<b>:</b>00</div><span class="cap">Sunday · kitchen table</span></div>
+ </div>
+</section>
+
+<section class="frame" aria-label="Get the Life Pack">
+ <div class="bar"><div class="dots"><i></i><i></i><i></i></div><span class="url">04 — The Life Pack</span><span class="sq"></span></div>
+ <div class="close">
+  <div>
+   <span class="num">04 / 04</span>
+   <h2 style="margin-top:22px">Ten planners. <em>One quiet week</em> after another.</h2>
+   <div class="buy"><a class="btn" href="https://shop.everydayessentials.guide/l/vdigvw">Get the Life Pack <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><div class="price">$29<small>Instant download · printable</small></div></div>
+  </div>
+  <ul class="list">
+   <li>Budget &amp; Debt Payoff Planner</li><li>Weekly Meal Planner &amp; Grocery Guide</li><li>Home Management Binder</li><li>Chore Charts &amp; Routine Cards</li><li>ADHD-Friendly Daily Planner</li><li>In-Case-of-Emergency Organizer</li><li>Caregiver Medication Log</li><li>Gig-Worker Tax Tracker</li><li>Moving &amp; New Home Pack</li><li>Freelancer Starter Kit</li>
+  </ul>
+ </div>
+</section>
+</main>
+<footer>© Everyday Essentials</footer>
+<div class="mbar"><span><b>$29</b><small>10 planners</small></span><a class="btn" href="https://shop.everydayessentials.guide/l/vdigvw">Get the Life Pack</a></div>
+
+<script>
+const mob=matchMedia('(max-width:760px)').matches;
+const pats=['red c-blk','blk st-w','wht c-blk','red st-k','blk','wht hst-r','red half-k','blk c-red','wht st-k'];
+function panel(i,n,side){
+ const d=Math.abs(i-(n-1)/2),t=mob?d/((n-1)/2):(n-i)/n; // 1 = outer edge
+ const el=document.createElement('div');
+ const pat=(mob?['blk c-red','wht st-k','blk','red half-k'][Math.round(d)%4]:pats[(i*2)%pats.length]).split(' ');
+ el.className='p '+pat[0];
+ const h=mob?(30+70*Math.pow(t,1.5)):(26+74*Math.pow(t,1.7));
+ el.style.height=h+'%';el.style.flexGrow=mob?1:(0.5+1.6*t);el.style.flexBasis='0';
+ el.style.transitionDelay=(mob?d*.08:(n-i)*.07)+'s';if(mob)el.style.transformOrigin=side=='l'?'bottom':'top';
+ const k=pat[1];
+ if(k){const [kind,col]=k.split('-');const c={blk:'#0B0B0B',red:'#E5301C',k:'#0B0B0B',w:'#fff',r:'#E5301C'}[col];
+  const s=document.createElement('i');
+  if(kind=='c'){s.className='c';s.style.background=c;s.style.top=(i%2?'100%':'0%')}
+  if(kind=='half'){s.className='half';s.style.background=c;s.style.borderRadius='50% 50% 0 0'}
+  if(kind=='st'){s.className='st';s.style.color=c}
+  if(kind=='hst'){s.className='hst';s.style.color=c}
+  el.appendChild(s)}
+ return el}
+document.querySelectorAll('.arch .side').forEach(sd=>{const n=mob?7:11;for(let i=0;i<n;i++)sd.appendChild(panel(i,n,sd.dataset.side))});
+
+// spiral
+const sp=document.getElementById('spiral'),core=document.getElementById('core');
+function build(){
+ sp.querySelectorAll('.tile').forEach(t=>t.remove());
+ const W=sp.clientWidth,H=sp.clientHeight,M=Math.min(W,H),cx=W/2,cy=H/2;
+ const cd=M*0.42;core.style.width=core.style.height=cd+'px';
+ const N=46,cls=['blk','red','wht','st','blk','ring','wht','red','blk','st','wht'];
+ let a=-1.6,r=cd*0.58,sz=M*0.022;
+ for(let i=0;i<N;i++){
+  const s=sz;
+  const t=document.createElement('div');t.className='tile '+cls[i%cls.length];
+  t.style.left=(cx+Math.cos(a)*r)+'px';t.style.top=(cy+Math.sin(a)*r)+'px';
+  t.style.width=t.style.height=s+'px';t.style.setProperty('--rot',(a*57.3)+'deg');
+  a+=s*1.25/r;r+=s*0.16;sz*=1.075;
+  t.style.transitionDelay=(0.1+i*0.035)+'s';sp.insertBefore(t,core)}
+}
+const chips=[['Electric bill due?',1],['Picture day??',1],["What's for dinner",0],['Laundry (again)',0],['Permission slip',0],['Dentist Tue',0]];
+chips.forEach(([txt,hot],i)=>{const c=document.createElement('span');c.className='chip'+(hot?' hot':'');c.textContent=txt;
+ const a=i*1.05+.3,R=mob?52:70;c.style.setProperty('--x',Math.cos(a)*R*1.15+'px');c.style.setProperty('--y',Math.sin(a)*R+'px');
+ c.style.setProperty('--r',((i%2?1:-1)*(6+i*3))+'deg');c.style.setProperty('--oy',((i-2.5)*(mob?27:34))+'px');
+ c.style.animationDelay=(i*.2)+'s';core.appendChild(c)});
+build();addEventListener('resize',build);
+
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');
+ if(e.target.contains(sp)&&!e.target.dataset.o){e.target.dataset.o=1;setTimeout(()=>e.target.classList.add('ordered'),reduce?0:2600)}
+ e.target.querySelectorAll('.list li').forEach((l,i)=>l.style.transitionDelay=(i*.06)+'s')}}),{threshold:.22});
+document.querySelectorAll('.frame').forEach(f=>io.observe(f));
+if(reduce)document.querySelectorAll('.frame').forEach(f=>f.classList.add('in'));
+</script>
+</body>
+</html>
